@@ -1,3 +1,37 @@
+
+
+const sendUpdatedGames = (req, res) => {
+  res.send({
+    games: req.games,
+    updated: req.updatedObject
+  });
+};
+
+module.exports = { sendAllGames, sendUpdatedGames };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const { writeData } = require("../utils/data"); 
 const addGameController = async (req, res) => {
     //тут был код
